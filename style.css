@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+#grid {
+    display: inline-grid;
+    grid-template-columns: repeat(8, 41px);
+    max-width: 960px;
+    border-style: solid;
+    
+}
+
+.box {
+    border: black 1px solid;
+    width: 40px;
+    height: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.blackbtn {
+    width: 100px;
+    height: 50px;
+}
+
+.autumnbtn {
+    width: 100px;
+    height: 50px;
+}
+
+.shadebtn {
+    width: 100px;
+    height: 50px;
+}
+
+.clearbtn {
+    width: 100px;
+    height: 50px;
+}
+
+
+
