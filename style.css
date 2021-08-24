@@ -48,6 +48,12 @@ h1 {
     height: 50px;
 }
 
+.sizebtn {
+    width: 100px;
+    height: 50px;
+}
+
 .box {
     border: 1px solid grey;
+    border-radius: 1px;
 }

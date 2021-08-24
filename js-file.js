@@ -3,6 +3,7 @@ const blackBtn = document.querySelector('.blackbtn');
 const autumnBtn = document.querySelector('.autumnbtn');
 const rainbowBtn = document.querySelector('.rainbowbtn');
 const clearBtn = document.querySelector('.clearbtn');
+const sizeBtn = document.querySelector('.sizebtn');
 
 
 function createGrid(col, rows) {
@@ -58,11 +59,41 @@ function resetColor() {
 }
 
 
-createGrid(32, 32);
+function resetGrid() {
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach(box => box.remove());
+}
+
+
+function setGridSize() {
+    sizeBtn.addEventListener('click' , () => {
+        const boxes = document.querySelectorAll('.box');
+        let size = prompt('Enter the Size of the Grid. (1-100)');
+        if (size > 0 && size < 101) {
+            resetGrid();
+            createGrid(size, size);
+            blackColor();
+            autumnColor();
+            rainbowColor();
+            resetColor();
+        }
+
+        else {
+            let invalidNum = alert('Please try again');
+        }
+    })
+}
+
+
+createGrid(15, 15);
 blackColor();
 autumnColor();
 rainbowColor();
 resetColor();
+setGridSize();
+
+
+
 
 /*function createGrid() {
     for (let i = 0; i < 64; i++) {
