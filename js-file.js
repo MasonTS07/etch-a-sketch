@@ -54,7 +54,7 @@ function rainbowColor() {
 function resetColor() {
     const boxes = document.querySelectorAll('.box');
     clearBtn.addEventListener('click' , () => {
-        boxes.forEach(box => box.style.backgroundColor = 'white');
+        boxes.forEach(box => box.style.backgroundColor = 'transparent');
     })
 }
 
